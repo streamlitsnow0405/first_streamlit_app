@@ -12,8 +12,8 @@ streamlit.header('Breakfast Menu')
 
 streamlit.text('🥣 Omega 3 and Blueberry Oatmeal')
 streamlit.text('🥗 Kale, Spinach and Rocket Smoothie')
-streamlit.text('🐔 Hard-Boiled Free-Range Egg')
-streamlit.text('🥑🍞 Avocado Toast')
+# streamlit.text('🐔 Hard-Boiled Free-Range Egg')
+# streamlit.text('🥑🍞 Avocado Toast')
 
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 
@@ -28,7 +28,3 @@ streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index), ['Apple', 
 
 # Display the table on the page.
 streamlit.dataframe(my_fruit_list)
-
-
-
-streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
