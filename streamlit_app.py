@@ -71,3 +71,9 @@ streamlit.dataframe(my_data_rows)
 
 add_my_fruit = streamlit.text_input('What fruit would you like to add?','jackfruit')
 streamlit.write('Thanks for adding ', add_my_fruit)
+
+
+
+# just to test the flow control, will NOT work correctly, but got with it for now
+
+my_cur.execute("insert into FRUIT_LOAD_LIST values('from streamlit')")
