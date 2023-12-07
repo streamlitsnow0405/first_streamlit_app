@@ -123,11 +123,3 @@ if streamlit.button('Add a Fruit to the List'):
   back_from_function = insert_row_snowflake(add_my_fruit)
   streamlit.text(back_from_function)
   
-
-#streamlit.write('Thanks for adding ', add_my_fruit)
-
-
-
-# just to test the flow control, will NOT work correctly, but got with it for now
-
-my_cur.execute("insert into FRUIT_LOAD_LIST values('from streamlit')")
