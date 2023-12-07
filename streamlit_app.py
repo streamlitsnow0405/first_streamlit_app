@@ -61,10 +61,11 @@ my_cur = my_cnx.cursor()
 
 
 my_cur.execute("SELECT * FROM FRUIT_LOAD_LIST")
-my_data_row = my_cur.fetchone()
+#my_data_row = my_cur.fetchone() #fetches only one row
 # streamlit.text("FRUIT LOAD LIST CONTAINS:")
 # streamlit.text(my_data_row)
 
-streamlit.header("FRUIT LOAD LIST CONTAINS:")
-streamlit.dataframe(my_data_row)
+my_data_rows = my_cur.fetchall()
+streamlit.header("THE FRUIT LOAD LIST CONTAINS:")
+streamlit.dataframe(my_data_rows)
 
